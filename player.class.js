@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 import { c } from "./view.js";
 
 class Player {
