@@ -1,5 +1,4 @@
 
-
 import { c, background, gameBar} from "./view.js";
 import {player1, Shoot, ItemsForCollection} from "./player.class.js";
 import {enemiesRelease, enemyShoots, enemies, Explosion} from "./enemies.class.js";
