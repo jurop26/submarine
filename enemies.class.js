@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 import { player1 } from "./player.class.js";
 import {c, gameBar } from "./view.js";
 
