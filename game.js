@@ -1,6 +1,6 @@
 
 //[ADO] importovat c je take divne, mal by to byt context canvasu, ze ?? tak preco sa to nevola tak ??
-import { c, background, gameBar} from "./view.js";
+import { c as canvasContext, background, gameBar} from "./view.js";
 import {player1, Shoot, ItemsForCollection} from "./player.class.js";
 import {enemiesRelease, enemyShoots, enemies, Explosion} from "./enemies.class.js";
 
@@ -25,7 +25,7 @@ player1.render(); setTimeout(() => update(), 3000)};
 function update(){
 
     // Clear screen 
-    c.clearRect(0,0,c.width, c.height);
+    canvasContext.clearRect(0,0,c.width, c.height);
     
     // Render objects
     background.render();
