@@ -1,5 +1,5 @@
 import { player1 } from "./player.class.js";
-import {c, gameBar } from "./view.js";
+import {canvasContext, gameBar } from "./view.js";
 
 // Enemy shoots array
 export const enemyShoots = [];
@@ -22,7 +22,7 @@ class Enemies {
         this.image.src = `images/${name}.png`;
     }
     render() {
-        c.drawImage(this.image,this.sx, this.sy, this.sw, this.sh, this.x,this.y,this.w,this.h);
+        canvasContext.drawImage(this.image,this.sx, this.sy, this.sw, this.sh, this.x,this.y,this.w,this.h);
     }
 }
 
@@ -98,7 +98,7 @@ class EnemyShoots {
         this.image.src = "images/bullets.png";
     }
     render (){
-        c.drawImage(this.image,this.x,this.y,this.w,this.h);
+        canvasContext.drawImage(this.image,this.x,this.y,this.w,this.h);
         this.x -= 10 ;
     }
 }
@@ -114,7 +114,7 @@ export class Explosion {
         this.image.src = "images/explosion.png";
     }
     render (){
-        c.drawImage(this.image,this.x,this.y,this.w,this.h)
+        canvasContext.drawImage(this.image,this.x,this.y,this.w,this.h)
     }
 }
 

@@ -1,4 +1,4 @@
-import { c } from "./view.js";
+import { canvasContext } from "./view.js";
 
 class Player {
     constructor(x, y){
@@ -16,14 +16,14 @@ class Player {
     }
     render()  {
         if (this.sx == 0 && this.sy == 0){
-            c.drawImage(this.image, this.sx, this.sy, this.sw, this.sh, this.x, this.y, this.w,this.h);
+            canvasContext.drawImage(this.image, this.sx, this.sy, this.sw, this.sh, this.x, this.y, this.w,this.h);
             this.sx = 770;
         }
         else if (this.sx == 0 && this.sy == 344.4) {
-            c.drawImage(this.image, this.sx, this.sy, this.sw, this.sh, this.x, this.y, this.w,this.h); 
+            canvasContext.drawImage(this.image, this.sx, this.sy, this.sw, this.sh, this.x, this.y, this.w,this.h); 
         }
         else {
-            c.drawImage(this.image, this.sx, this.sy, this.sw, this.sh, this.x, this.y, this.w,this.h);
+            canvasContext.drawImage(this.image, this.sx, this.sy, this.sw, this.sh, this.x, this.y, this.w,this.h);
             this.sx = 0; 
         }
     } 
@@ -64,7 +64,7 @@ export class Shoot {
         this.image.src = "images/bullets.png";     
     }
     render (){
-        c.drawImage(this.image,this.x,this.y,this.w,this.h);
+        canvasContext.drawImage(this.image,this.x,this.y,this.w,this.h);
         this.x += 10 ;
     }
 }
@@ -80,7 +80,7 @@ export class ItemsForCollection {
         this.image.src = image;
     }
     render (){
-        c.drawImage(this.image,this.x,this.y,this.w,this.h);
+        canvasContext.drawImage(this.image,this.x,this.y,this.w,this.h);
         this.x -= 3;
     }
 }

@@ -1,6 +1,6 @@
 
 //[ADO] importovat c je take divne, mal by to byt context canvasu, ze ?? tak preco sa to nevola tak ??
-import { c as canvasContext, background, gameBar} from "./view.js";
+import {canvasContext , background, gameBar} from "./view.js";
 import {player1, Shoot, ItemsForCollection} from "./player.class.js";
 import {enemiesRelease, enemyShoots, enemies, Explosion} from "./enemies.class.js";
 
